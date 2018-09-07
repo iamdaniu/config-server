@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: 'ssh://git@nastrovje/volume1/git_repos/ablesung_config'
+      enabled: false
+
+server:
+  port: 8888
+
+endpoints:
+  health:
+    sensitive: false
+management:
+  security:
+    enabled: false
+

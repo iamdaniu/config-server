@@ -6,6 +6,7 @@ spring:
       server:
         git:
           uri: 'ssh://git@nastrovje/volume1/git_repos/ablesung_config'
+          cloneOnStart: true
       enabled: false
 
 server:
